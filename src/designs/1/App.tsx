@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './styles.css'
 import { personalInfo, skills, services, projects, testimonials, stats } from '../../data/content'
 
@@ -222,7 +223,7 @@ function Design1() {
         <p className="d1__copyright">© 2024 {personalInfo.name}. All rights reserved.</p>
       </footer>
 
-      <a href="/glm" className="d1__back-link">← Back to designs</a>
+      <Link to="/" className="d1__back-link">← Back to designs</Link>
     </div>
   )
 }

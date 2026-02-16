@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './styles.css'
 import { personalInfo, skills, services, projects, testimonials, stats, trainingPrograms, blogPosts } from '../../data/content'
 
@@ -6,7 +7,7 @@ function Design4() {
     <div className="d4">
       <nav className="d4__nav">
         <div className="d4__nav-inner">
-          <a href="/glm" className="d4__logo">Zafer AYAN</a>
+          <Link to="/" className="d4__logo">Zafer AYAN</Link>
           <div className="d4__nav-links">
             <a href="#about">About</a>
             <a href="#mentorship">Mentorship</a>
@@ -331,7 +332,7 @@ function Design4() {
       <footer className="d4__footer">
         <div className="d4__footer-inner">
           <div className="d4__footer-left">
-            <a href="/glm" className="d4__logo">Zafer AYAN</a>
+            <Link to="/" className="d4__logo">Zafer AYAN</Link>
             <p>Frontend Developer & Mentor</p>
           </div>
           <div className="d4__footer-right">

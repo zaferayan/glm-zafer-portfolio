@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './styles.css'
 import { personalInfo, skills, services, projects, testimonials, stats } from '../../data/content'
 
@@ -5,7 +6,7 @@ function Design2() {
   return (
     <div className="d2">
       <nav className="d2__nav">
-        <a href="/glm" className="d2__logo">ZA.</a>
+        <Link to="/" className="d2__logo">ZA.</Link>
         <div className="d2__nav-links">
           <a href="#work">Work</a>
           <a href="#about">About</a>

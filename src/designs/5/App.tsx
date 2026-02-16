@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './styles.css'
 import { personalInfo, skills, services, projects, testimonials, stats } from '../../data/content'
 
@@ -241,7 +242,7 @@ function Design5() {
         </div>
       </footer>
 
-      <a href="/glm" className="d5__back">← Back</a>
+      <Link to="/" className="d5__back">← Back</Link>
     </div>
   )
 }

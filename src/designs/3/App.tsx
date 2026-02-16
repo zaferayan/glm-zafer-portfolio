@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './styles.css'
 import { personalInfo, skills, services, projects, testimonials, stats, trainingPrograms } from '../../data/content'
 
@@ -263,7 +264,7 @@ function Design3() {
         </div>
       </footer>
 
-      <a href="/glm" className="d3__back">← All Designs</a>
+      <Link to="/" className="d3__back">← All Designs</Link>
     </div>
   )
 }
