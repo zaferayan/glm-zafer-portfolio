@@ -8,7 +8,7 @@ import Landing from "../../pages/Landing";
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/glm-zafer-portfolio">
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/1" element={<Design1 />} />
