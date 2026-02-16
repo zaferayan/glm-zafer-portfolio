@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Landing.css";
 
 const designs = [
@@ -54,16 +55,16 @@ function Landing() {
 
         <div className="landing__grid">
           {designs.map((design) => (
-            <a
+            <Link
               key={design.id}
-              href={`/glm-zafer-portfolio/${design.id}`}
+              to={`/${design.id}`}
               className={`landing__card landing__card--${design.theme}`}
             >
               <span className="landing__card-number">/{design.id}</span>
               <h2 className="landing__card-title">{design.title}</h2>
               <p className="landing__card-description">{design.description}</p>
               <div className="landing__card-arrow">→</div>
-            </a>
+            </Link>
           ))}
         </div>
 
